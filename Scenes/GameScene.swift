@@ -397,7 +397,7 @@ final class GameScene: SKScene {
             card.flipAnimation = card.action(forKey: "flipAnimation")
             card.removeAllActions()
             card.isHidden = true
-            card.isUserInteractionEnabled = false
+            //card.isUserInteractionEnabled = false
         }
         
         pauseOverlay.isHidden = false
@@ -413,7 +413,7 @@ final class GameScene: SKScene {
         
         cards.forEach { card in
             card.isHidden = false
-            card.isUserInteractionEnabled = true
+          //  card.isUserInteractionEnabled = true
             
             if let flipAnimation = card.flipAnimation {
                 card.run(flipAnimation, withKey: "flipAnimation")
